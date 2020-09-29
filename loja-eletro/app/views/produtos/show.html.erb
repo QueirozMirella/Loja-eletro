@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo produto:</strong>
+  <%= @produto.codigo_produto %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @produto.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @produto.modelo %>
+</p>
+
+<p>
+  <strong>Numero serie:</strong>
+  <%= @produto.numero_serie %>
+</p>
+
+<%= link_to 'Edit', edit_produto_path(@produto) %> |
+<%= link_to 'Back', produtos_path %>
