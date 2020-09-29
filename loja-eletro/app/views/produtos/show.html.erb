@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Codigo produto:</strong>
+  <strong>Codigo do Produto:</strong>
   <%= @produto.codigo_produto %>
 </p>
 
@@ -16,8 +16,13 @@
 </p>
 
 <p>
-  <strong>Numero serie:</strong>
+  <strong>Numero de Série:</strong>
   <%= @produto.numero_serie %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @produto.quantidade %>
 </p>
 
 <%= link_to 'Edit', edit_produto_path(@produto) %> |
