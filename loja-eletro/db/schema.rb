@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_29_134827) do
+ActiveRecord::Schema.define(version: 2020_09_29_145400) do
 
   create_table "clientes", force: :cascade do |t|
     t.integer "codigo_cliente"
@@ -41,6 +41,12 @@ ActiveRecord::Schema.define(version: 2020_09_29_134827) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "codigo_venda"
+    t.integer "cliente_id", null: false
+    t.integer "produto_id", null: false
+    t.index ["cliente_id"], name: "index_vendas_on_cliente_id"
+    t.index ["produto_id"], name: "index_vendas_on_produto_id"
   end
 
+  add_foreign_key "vendas", "clientes"
+  add_foreign_key "vendas", "produtos"
 end
