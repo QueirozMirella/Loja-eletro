@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Defeito:</strong>
+  <%= @troca.defeito %>
+</p>
+
+<p>
+  <strong>Data troca:</strong>
+  <%= @troca.data_troca %>
+</p>
+
+<%= link_to 'Edit', edit_troca_path(@troca) %> |
+<%= link_to 'Back', trocas_path %>

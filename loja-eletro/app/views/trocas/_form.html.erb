@@ -1,0 +1,27 @@
+<%= form_with(model: troca, local: true) do |form| %>
+  <% if troca.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(troca.errors.count, "error") %> prohibited this troca from being saved:</h2>
+
+      <ul>
+        <% troca.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :defeito %>
+    <%= form.text_area :defeito %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_troca %>
+    <%= form.date_select :data_troca %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
