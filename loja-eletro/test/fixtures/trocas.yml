@@ -1,9 +1,0 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  defeito: MyText
-  data_troca: 2020-09-28
-
-two:
-  defeito: MyText
-  data_troca: 2020-09-28
