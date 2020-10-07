@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 require 'spec_helper'
 
@@ -84,3 +85,4 @@ RSpec.describe VendasController, :type => :controller do
         end
     end
 end
+=end

@@ -13,6 +13,7 @@
   <tbody>
     <% @vendas.each do |venda| %>
       <tr>
+        <td><%= venda.codigo_venda %></td>
         <td><%= venda.data_venda %></td>
         <td><%= link_to 'Show', venda %></td>
         <td><%= link_to 'Edit', edit_venda_path(venda) %></td>
@@ -25,3 +26,6 @@
 <br>
 
 <%= link_to 'New Venda', new_venda_path %>
+<form action="http://localhost:3000/">
+    <input type="submit" value="Voltar" />
+</form>
