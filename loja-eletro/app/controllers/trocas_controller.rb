@@ -28,7 +28,7 @@ class TrocasController < ApplicationController
 
     respond_to do |format|
       if @troca.save
-        format.html { redirect_to @troca, notice: 'Troca was successfully created.' }
+        format.html { redirect_to @troca, notice: 'Troca criada com sucesso.' }
         format.json { render :show, status: :created, location: @troca }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class TrocasController < ApplicationController
   def update
     respond_to do |format|
       if @troca.update(troca_params)
-        format.html { redirect_to @troca, notice: 'Troca was successfully updated.' }
+        format.html { redirect_to @troca, notice: 'Troca atualizada com sucesso.' }
         format.json { render :show, status: :ok, location: @troca }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class TrocasController < ApplicationController
   def destroy
     @troca.destroy
     respond_to do |format|
-      format.html { redirect_to trocas_url, notice: 'Troca was successfully destroyed.' }
+      format.html { redirect_to trocas_url, notice: 'Troca excluida com sucesso.' }
       format.json { head :no_content }
     end
   end
